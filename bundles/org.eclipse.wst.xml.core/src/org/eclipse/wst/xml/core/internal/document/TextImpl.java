@@ -861,8 +861,12 @@ public class TextImpl extends CharacterDataImpl implements IDOMText {
 			throw new DOMException(DOMException.NO_MODIFICATION_ALLOWED_ERR, DOMMessages.NO_MODIFICATION_ALLOWED_ERR);
 		}
 
-		SourceValidator validator = new SourceValidator(this);
-		if (validator.validateSource(source))
+		/*
+		 * founderfix
+		 * 改造代码
+		 */
+//		SourceValidator validator = new SourceValidator(this);
+//		if (validator.validateSource(source))
 			setTextSource(source);
 	}
 

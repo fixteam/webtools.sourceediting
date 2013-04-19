@@ -49,6 +49,10 @@ public class JSPModelQueryCMProvider implements ModelQueryCMProvider {
 			}
 		}
 		if (jcmdoc == null) {
+			/*
+			 * founderfix
+			 * 加载出所有jsp组件信息
+			 */
 			jcmdoc = JSPCMDocumentFactory.getCMDocument();
 		}
 		

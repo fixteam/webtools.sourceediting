@@ -1020,6 +1020,17 @@ public class DocumentImpl extends NodeContainer implements IDOMDocument, Documen
 		// special for JSP tag in tag name
 		if (name.startsWith(JSPTag.TAG_OPEN))
 			return true;
+		
+		/*
+		 * founderfix
+		 * 增加代码
+		 */
+		if (name.startsWith("span")){
+			return true;
+		}
+		
+		
+		
 		return false;
 	}
 

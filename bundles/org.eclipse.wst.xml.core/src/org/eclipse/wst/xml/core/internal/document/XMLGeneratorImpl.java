@@ -389,8 +389,15 @@ public class XMLGeneratorImpl implements ISourceGenerator {
 
 		if (impl.isEmptyTag())
 			return null;
-		if (!impl.isContainer())
-			return null;
+		
+		/*
+		 * founderfix
+		 * 改造，都改成标记对形式
+		 */
+//		if (!impl.isContainer())
+//			return null;
+		
+		
 		if (impl.isJSPTag())
 			return JSPTag.TAG_CLOSE;
 

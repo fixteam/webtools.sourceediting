@@ -1,3 +1,9 @@
-#Tue Apr 04 03:36:32 EDT 2006
 eclipse.preferences.version=1
+encoding//src/org/eclipse/wst/html/core/internal/contentmodel/DeclCollection.java=UTF-8
+encoding//src/org/eclipse/wst/html/core/internal/contentmodel/HTMLCMDocumentFactory.java=UTF-8
+encoding//src/org/eclipse/wst/html/core/internal/contentmodel/JSP11Namespace.java=UTF-8
+encoding//src/org/eclipse/wst/html/core/internal/contentmodel/JSP20ElementCollection.java=UTF-8
+encoding//src/org/eclipse/wst/html/core/internal/contentmodel/JSPElementCollection.java=UTF-8
+encoding//src/org/eclipse/wst/html/core/internal/contentmodel/Tag20ElementCollection.java=UTF-8
+encoding//src/org/eclipse/wst/html/core/internal/modelquery/HTMLModelQueryCMProvider.java=UTF-8
 encoding/<project>=ISO-8859-1

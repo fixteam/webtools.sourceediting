@@ -39,10 +39,18 @@ public class SimpleAssociationProvider extends BaseAssociationProvider
   public CMElementDeclaration getCMElementDeclaration(Element element)
   {
     CMElementDeclaration result = null;
+    /*
+     * founderfix
+     * cmDocument = JCM21DocImpl
+     */
     CMDocument cmDocument = getCorrespondingCMDocument(element);
     if (cmDocument != null)
-    {        
-      result = (CMElementDeclaration)cmDocument.getElements().getNamedItem(element.getNodeName());    
+    {
+    	/*
+    	 * founderfix
+    	 * result = JSPElementCollection
+    	 */
+    	result = (CMElementDeclaration)cmDocument.getElements().getNamedItem(element.getNodeName());    
     }
     return result;
   }

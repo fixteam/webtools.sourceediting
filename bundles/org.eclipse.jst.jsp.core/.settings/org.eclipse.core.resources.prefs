@@ -1,3 +1,6 @@
-#Tue Apr 04 03:36:32 EDT 2006
 eclipse.preferences.version=1
+encoding//src/org/eclipse/jst/jsp/core/internal/modelquery/JSPModelQueryCMProvider.java=UTF-8
+encoding//src/org/eclipse/jst/jsp/core/internal/modelquery/JSPModelQueryExtension.java=UTF-8
+encoding//src/org/eclipse/jst/jsp/core/internal/provisional/JSP11Namespace.java=UTF-8
+encoding//src/org/eclipse/jst/jsp/core/internal/text/StructuredTextPartitionerForJSP.java=UTF-8
 encoding/<project>=ISO-8859-1

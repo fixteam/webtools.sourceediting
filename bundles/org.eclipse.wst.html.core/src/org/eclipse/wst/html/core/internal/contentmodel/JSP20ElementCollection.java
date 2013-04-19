@@ -363,6 +363,12 @@ class JSP20ElementCollection extends JSPElementCollection implements JSP20Namesp
 		names[Ids20.ID_ATTRIBUTE] = JSP20Namespace.ElementName.ATTRIBUTE;
 		names[Ids20.ID_ELEMENT] = JSP20Namespace.ElementName.ELEMENT;
 		names[Ids20.ID_OUTPUT] = JSP20Namespace.ElementName.OUTPUT;
+		
+		/*
+		 * founderfix
+		 * 自定义一个jsp组件4
+		 */
+		names[Ids.ID_FALLBACKFOUNDERFIX] = FALLBACKFOUNDERFIX;
 	}
 
 	/**

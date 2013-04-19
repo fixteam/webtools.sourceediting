@@ -231,6 +231,14 @@ abstract class DeclCollection implements CMNamedNodeMap {
 		if (decl != null)
 			return decl; // already exist.
 
+		/*
+		 * founderfix
+		 * 解决jsp标签加载不出的问题
+		 */
+		if(index==17){
+			System.out.println();
+		}
+		
 		decl = create(getName(index));
 		fDecls[index] = decl;
 		return decl;

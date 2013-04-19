@@ -1,3 +1,5 @@
-#Tue Apr 04 03:36:32 EDT 2006
 eclipse.preferences.version=1
+encoding//src/org/eclipse/wst/xml/core/internal/document/DocumentImpl.java=UTF-8
+encoding//src/org/eclipse/wst/xml/core/internal/document/TextImpl.java=UTF-8
+encoding//src/org/eclipse/wst/xml/core/internal/document/XMLGeneratorImpl.java=UTF-8
 encoding/<project>=ISO-8859-1

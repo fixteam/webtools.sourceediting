@@ -38,6 +38,14 @@ public interface JSP11Namespace {
 		public static final String PARAM = "jsp:param"; //$NON-NLS-1$
 		public static final String ROOT = "jsp:root"; //$NON-NLS-1$
 		public static final String TEXT = "jsp:text"; //$NON-NLS-1$
+		
+		/*
+		 * founderfix
+		 * 自定义一个jsp组件2
+		 * 		FALLBACKFOUNDERFIX
+		 * 		jsp:fallbackfounderfix
+		 */
+		public static final String FALLBACKFOUNDERFIX = "span fallbackfounderfix"; //$NON-NLS-1$
 	}
 
 	public static final String JSP11_URI = ""; //$NON-NLS-1$

@@ -40,6 +40,10 @@ class Tag20ElementCollection extends JSPElementCollection implements JSP20Namesp
 		public static final int ID_PLUGIN = 11;
 		public static final int ID_PARAMS = 12;
 		public static final int ID_FALLBACK = 13;
+		/*
+		 * founderfix
+		 * 增加自定义组件
+		 */
 		public static final int ID_PARAM = 14;
 		public static final int ID_ROOT = 15;
 		public static final int ID_TEXT = 16;

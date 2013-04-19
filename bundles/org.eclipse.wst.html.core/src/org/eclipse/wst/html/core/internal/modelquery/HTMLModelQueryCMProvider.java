@@ -37,8 +37,12 @@ import org.w3c.dom.Node;
 
 public class HTMLModelQueryCMProvider implements ModelQueryCMProvider {
 
-
+	/*
+	 * founderfix
+	 * 加载出所有HTML5组件信息
+	 */
 	private static CMDocument staticHTML5 = HTMLCMDocumentFactory.getCMDocument(CMDocType.HTML5_DOC_TYPE);
+	
 	private static CMDocument staticHTML = HTMLCMDocumentFactory.getCMDocument(CMDocType.HTML_DOC_TYPE);
 	private static CMDocument staticCHTML = HTMLCMDocumentFactory.getCMDocument(CMDocType.CHTML_DOC_TYPE);
 	private static HTMLDocumentTypeRegistry doctypeRegistry = HTMLDocumentTypeRegistry.getInstance();
