@@ -46,6 +46,11 @@ public interface HTMLCMProperties {
 	 * "isJSP" returns java.lang.Boolean object.
 	 */
 	public static final String IS_JSP = "isJSP";//$NON-NLS-1$
+	
+	/**
+	 * "isJSP" returns java.lang.Boolean object.
+	 */
+	public static final String IS_FOUNDERFXI = "isFOUNDERFIX";//$NON-NLS-1$
 	/**
 	 * "isXHTML" returns java.lang.Boolean object.
 	 */

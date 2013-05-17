@@ -742,9 +742,9 @@ public class ElementImpl extends NodeContainer implements IDOMElement {
 		// should throw DOMException instead of return null?
 		if (newChild == null)
 			return null;
-		if (!isContainer()) { // never be container
-			throw new DOMException(DOMException.HIERARCHY_REQUEST_ERR, DOMMessages.HIERARCHY_REQUEST_ERR);
-		}
+//		if (!isContainer()) { // never be container
+//			throw new DOMException(DOMException.HIERARCHY_REQUEST_ERR, DOMMessages.HIERARCHY_REQUEST_ERR);
+//		}
 		if (newChild.getNodeType() != TEXT_NODE && newChild.getNodeType() != CDATA_SECTION_NODE) {
 			if (isJSPContainer() || isCDATAContainer()) { // accepts only
 				// Text

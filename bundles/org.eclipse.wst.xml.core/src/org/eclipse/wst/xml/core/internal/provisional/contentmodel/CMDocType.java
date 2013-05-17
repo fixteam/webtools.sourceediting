@@ -22,6 +22,8 @@ public interface CMDocType {
 	 * HTML files
 	 */
 	public final static String HTML_DOC_TYPE = "HTML";//$NON-NLS-1$
+	
+	public final static String FOUNDERFIX_DOC_TYPE = "FOUNDERFIX";//$NON-NLS-1$
 	/**
 	 * HTML5 files
 	 */

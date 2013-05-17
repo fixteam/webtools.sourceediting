@@ -49,25 +49,7 @@ public final class HTMLCMDocumentFactory {
 		if (obj == null && cmtype != null) {
 			if (supportedCMtypes.contains(cmtype)) {
 				obj = doCreateCMDocument(cmtype);
-				
-				/*
-				 * founderfix
-				 * 捕捉jsp
-				 */
-				if(cmtype.equals("JSP11")){
-					System.out.println("");
-				}
-				
 				cmdocs.put(cmtype, obj);
-				
-				/*
-				 * founderfix
-				 * 输出显示
-				 */
-				if(cmtype.equals("JSP11")){
-					cmdocs.get("JSP11");
-					System.out.println("");
-				}
 			}
 		}
 
@@ -84,19 +66,6 @@ public final class HTMLCMDocumentFactory {
 		else if (CMDocType.HTML5_DOC_TYPE.equals(cmtype)) {
 			CMNamespaceImpl h50ns = new CMNamespaceImpl(HTML50Namespace.HTML50_URI, HTML50Namespace.HTML50_TAG_PREFIX);
 			H5CMDocImpl html50doc = new H5CMDocImpl(CMDocType.HTML5_DOC_TYPE, h50ns);
-			
-			/*
-			 * founderfix
-			 * 测试代码
-			 * 结论，此处是懒加载
-			 * 
-			 * 加载组件过程
-			 * H5CMDocImpl
-			 * 		elements = new HTML5ElementCollection(attributes);
-			 * 			HTML5ElementCollection
-			 * 
-			 */
-//			html50doc.getElements().item(7);
 			return html50doc;
 		}
 		
@@ -109,41 +78,6 @@ public final class HTMLCMDocumentFactory {
 		else if (CMDocType.JSP21_DOC_TYPE.equals(cmtype)) {
 			CMNamespaceImpl j21ns = new CMNamespaceImpl(JSP21Namespace.JSP21_URI, JSP11Namespace.JSP_TAG_PREFIX);
 			JCM21DocImpl jsp21doc = new JCM21DocImpl(CMDocType.JSP21_DOC_TYPE, j21ns);
-			
-			/*
-			 * founderfix
-			 * 测试代码
-			 * 结论，此处是懒加载
-			 * 
-			 * 加载组件过程
-			 * 
-			 * JCM21DocImpl
-			 * 		super(docTypeName, targetNamespace, new JSP21ElementCollection());
-			 * 			JSP21ElementCollection
-			 * 
-			 */
-//			jsp21doc.getElements().item(0);
-//			jsp21doc.getElements().item(1);
-//			jsp21doc.getElements().item(2);
-//			jsp21doc.getElements().item(3);
-//			jsp21doc.getElements().item(4);
-//			jsp21doc.getElements().item(5);
-//			jsp21doc.getElements().item(6);
-//			jsp21doc.getElements().item(7);
-//			jsp21doc.getElements().item(8);
-//			jsp21doc.getElements().item(9);
-//			jsp21doc.getElements().item(10);
-//			jsp21doc.getElements().item(11);
-//			jsp21doc.getElements().item(12);
-//			jsp21doc.getElements().item(13);
-//			jsp21doc.getElements().item(14);
-//			jsp21doc.getElements().item(15);
-//			jsp21doc.getElements().item(16);
-//			jsp21doc.getElements().item(17);
-//			jsp21doc.getElements().item(18);
-//			jsp21doc.getElements().item(19);
-//			jsp21doc.getElements().item(20);
-//			jsp21doc.getElements().item(21);
 			return jsp21doc;
 		}
 
@@ -164,24 +98,6 @@ public final class HTMLCMDocumentFactory {
 				CMNamespaceImpl j11ns = new CMNamespaceImpl(JSP11Namespace.JSP11_URI, JSP11Namespace.JSP_TAG_PREFIX);
 				jsp11doc = new JCMDocImpl(CMDocType.JSP11_DOC_TYPE, j11ns);
 			}
-			jsp11doc.getElements().item(0);
-			jsp11doc.getElements().item(1);
-			jsp11doc.getElements().item(2);
-			jsp11doc.getElements().item(3);
-			jsp11doc.getElements().item(4);
-			jsp11doc.getElements().item(5);
-			jsp11doc.getElements().item(6);
-			jsp11doc.getElements().item(7);
-			jsp11doc.getElements().item(8);
-			jsp11doc.getElements().item(9);
-			jsp11doc.getElements().item(10);
-			jsp11doc.getElements().item(11);
-			jsp11doc.getElements().item(12);
-			jsp11doc.getElements().item(13);
-			jsp11doc.getElements().item(14);
-			jsp11doc.getElements().item(15);
-			jsp11doc.getElements().item(16);
-			jsp11doc.getElements().item(17);
 			return jsp11doc;
 		}
 

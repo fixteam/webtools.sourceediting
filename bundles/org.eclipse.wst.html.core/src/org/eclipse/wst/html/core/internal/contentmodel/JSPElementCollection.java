@@ -210,14 +210,6 @@ class JSPElementCollection extends DeclCollection implements JSP11Namespace.Elem
 		public static final int ID_PARAM = 14;
 		public static final int ID_ROOT = 15;
 		public static final int ID_TEXT = 16;
-		
-		/*
-		 * founderfix
-		 * 自定义一个jsp组件1
-		 * 		ID_FALLBACKFOUNDERFIX
-		 */
-		public static final int ID_FALLBACKFOUNDERFIX = 17;
-		
 
 		public static int getNumOfIds() {
 			if (numofids != -1)
@@ -683,12 +675,6 @@ class JSPElementCollection extends DeclCollection implements JSP11Namespace.Elem
 		names[Ids.ID_PARAM] = PARAM;
 		names[Ids.ID_ROOT] = ROOT;
 		names[Ids.ID_TEXT] = TEXT;
-		
-		/*
-		 * founderfix
-		 * 自定义一个jsp组件3
-		 */
-		names[Ids.ID_FALLBACKFOUNDERFIX] = FALLBACKFOUNDERFIX;
 	}
 
 	JSPElementCollection(String[] names, boolean tolerant) {
@@ -895,16 +881,6 @@ class JSPElementCollection extends DeclCollection implements JSP11Namespace.Elem
 				packet.name = TEXT;
 				packet.content = CMElementDeclaration.PCDATA;
 				break;
-				
-			/*
-			 * founderfix
-			 * 自定义一个jsp组件5
-			 */
-			case Ids.ID_FALLBACKFOUNDERFIX :
-				packet.name = FALLBACKFOUNDERFIX;
-				packet.content = CMElementDeclaration.PCDATA;
-				break;
-				
 			default :
 				// unknown ID
 				return null;
