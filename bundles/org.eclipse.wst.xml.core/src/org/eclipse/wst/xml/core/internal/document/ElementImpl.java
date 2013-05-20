@@ -830,6 +830,12 @@ public class ElementImpl extends NodeContainer implements IDOMElement {
 	 * @return boolean
 	 */
 	public boolean isContainer() {
+		/*
+		 *	@author Fifteenth
+		 */
+		if(this.getNodeName().equals("input")){
+			return true;
+		}
 		if (isCommentTag()) {
 			CommentElementAdapter adapter = (CommentElementAdapter) getAdapterFor(CommentElementAdapter.class);
 			if (adapter != null) {
