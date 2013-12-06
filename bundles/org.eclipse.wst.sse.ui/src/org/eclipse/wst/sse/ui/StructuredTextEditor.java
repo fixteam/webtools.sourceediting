@@ -1336,6 +1336,10 @@ public class StructuredTextEditor extends TextEditor {
 
 	protected void createActions() {
 		super.createActions();
+		
+		//(merge by wzw) set the default copy disable, enable the CopyAction 
+		setAction(ITextEditorActionConstants.COPY, null);
+		
 		ResourceBundle resourceBundle = SSEUIMessages.getResourceBundle();
 		IWorkbenchHelpSystem helpSystem = SSEUIPlugin.getDefault().getWorkbench().getHelpSystem();
 		// TextView Action - moving the selected text to
